@@ -7,7 +7,6 @@
     <title>WEB Studio</title>
 
     <!-- Fonts Syles-->
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,38 +14,49 @@
       rel="stylesheet"
     />
 
+    <!-- Normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- Custom Styles -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- Header section -->
-    <header>
-      <nav>
-        <a class="link-logo link" href="./index.html"
-          >Web<span class="logo-studio">Studio</span></a
-        >
-        <ul class="list">
-          <li><a class="link nav-link" href="./index.html">Studio</a></li>
-          <li>
-            <a class="link nav-link" href="./portfolio.html">Portfolio</a>
-          </li>
-          <li><a class="link nav-link" href="">Contacts</a></li>
-        </ul>
-      </nav>
-      <address class="link-addr">
-        <ul class="list">
-          <li>
-            <a class="link-addr link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a class="link-addr link" href="tel:+110001111111"
-              >+11 (000) 111-11-11</a
-            >
-          </li>
-        </ul>
-      </address>
+    <header class="header">
+      <div class="header-container container">
+        <nav class="header-nav">
+          <a class="link-logo link" href="./index.html"
+            >Web<span class="logo-studio">Studio</span></a
+          >
+          <ul class="header-nav-list list">
+            <li><a class="link nav-link" href="./index.html">Studio</a></li>
+            <li>
+              <a class="link nav-link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li><a class="link nav-link" href="">Contacts</a></li>
+          </ul>
+        </nav>
+        <address class="link-addr">
+          <ul class="header-nav-list list">
+            <li>
+              <a class="link-addr link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="link-addr link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </header>
     <main>
       <!-- Hero secttion -->

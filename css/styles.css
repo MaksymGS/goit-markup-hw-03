@@ -12,6 +12,25 @@ body {
   --button-color: #4d5ae5;
   --text-descr: #434455;
   --text-on-dark: #f4f4fd;
+  --nav-border: #e7e9fc;
+}
+
+/* reset start */
+h1,
+h2,
+h3,
+ul,
+p {
+  margin: 0;
+}
+
+.container {
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  outline: 2px solid red;
+  outline-offset: -2px;
 }
 
 /* Sections Background color */
@@ -57,6 +76,9 @@ body {
   color: var(--hover-element);
 }
 .link-logo {
+  margin-right: 76px;
+  padding: 24px 0;
+
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -65,10 +87,6 @@ body {
   color: var(--button-color);
   letter-spacing: 0.03em;
 }
-/* .link-logo:hover,
-.link-addr:focus {
-  color;
-} */
 
 /* Buttons style*/
 .button-order {
@@ -137,4 +155,24 @@ body {
 .card-member {
   background-color: var(--back-color);
   text-align: center;
+}
+
+/* Style header panel */
+.header {
+  background-color: var(--back-color);
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+.header-nav-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 24px 0;
 }
