@@ -23,14 +23,22 @@ ul,
 p {
   margin: 0;
 }
+ul {
+  padding-left: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 .container {
   max-width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
 
-  outline: 2px solid red;
-  outline-offset: -2px;
+  /* outline: 2px solid red;
+  outline-offset: -2px; */
 }
 
 /* Sections Background color */
@@ -78,9 +86,6 @@ p {
   color: var(--hover-element);
 }
 .link-logo {
-  margin-right: 76px;
-  padding: 24px 0;
-
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -88,6 +93,14 @@ p {
   text-transform: uppercase;
   color: var(--button-color);
   letter-spacing: 0.03em;
+}
+.link-logo-header {
+  margin-right: 76px;
+  padding: 24px 0;
+}
+.link-logo-footer {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 /* Buttons style*/
@@ -117,12 +130,21 @@ p {
 .button-portfolio {
   font-family: inherit;
   font-size: 16px;
-  background-color: var(--text-on-dark);
-  color: var(--button-color);
   font-weight: 500;
   line-height: inherit;
   letter-spacing: 0.04em;
+  background-color: var(--text-on-dark);
+  color: var(--button-color);
+
+  padding: 12px 24px;
+
   cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
 }
 .button-portfolio:hover,
 .button-portfolio:focus {
@@ -149,6 +171,7 @@ p {
   color: var(--heeader-color);
   text-align: center;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 .section-subtitle {
   font-weight: 500;
@@ -156,6 +179,7 @@ p {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--heeader-color);
+  margin-bottom: 8px;
 }
 .descr {
   letter-spacing: 0.02em;
@@ -163,6 +187,7 @@ p {
 }
 .descr-footer {
   color: var(--text-on-dark);
+  max-width: 264px;
 }
 .section-team {
   background-color: var(--text-on-dark);
@@ -170,6 +195,9 @@ p {
 .card-member {
   background-color: var(--back-color);
   text-align: center;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 /* Style header panel */
@@ -196,4 +224,81 @@ p {
 .hero-container {
   padding: 188px 0;
   align-items: center;
+}
+/* Style Features Section */
+.features-container {
+  align-items: center;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.feaures-list-container {
+  display: flex;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+}
+.feaures-list-block {
+  width: calc((100%-72px) / 4);
+  padding: 0px;
+}
+
+/* Style wawd Section */
+.wawd-container {
+  align-items: center;
+  padding-bottom: 120px;
+}
+.wawd-list-container {
+  display: flex;
+  padding: 0px;
+  gap: 24px;
+}
+.fwawd-list-block {
+  width: calc((100%-48px) / 3);
+}
+/* Style Our Team Section */
+.team-container {
+  align-items: center;
+  padding-bottom: 120px;
+  padding-top: 120px;
+}
+.team-list-container {
+  display: flex;
+  padding: 0px;
+  gap: 24px;
+}
+.team-list-block {
+  width: calc((100%-72px) / 4);
+}
+.card-content {
+  padding: 32px 16px;
+}
+/* Style Footer Section */
+.footer-container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.button-portfolio-container {
+  display: flex;
+  align-items: center;
+  padding: 96px 0 72px 0;
+  gap: 24px;
+  justify-content: center;
+}
+.card-portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+  padding-bottom: 120px;
+}
+.card-portfolio-block {
+  width: calc((100%-48px) / 3);
+}
+.card-link {
+  display: inline-block;
+}
+.card-portfolio-content {
+  padding: 32px 16px;
+  border: 1px solid var(--nav-border);
+  border-top: none;
 }
