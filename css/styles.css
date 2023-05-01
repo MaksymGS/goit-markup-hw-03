@@ -298,7 +298,7 @@ img {
   padding-bottom: 120px;
 }
 .card-portfolio-block {
-  width: calc((100%-48px) / 3);
+  width: calc((100% - 48px) / 3);
 }
 .card-link {
   display: inline-block;
